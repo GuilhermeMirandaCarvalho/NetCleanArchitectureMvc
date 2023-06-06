@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCleanArchitectureMvc.Domain", "NetCleanArchitectureMvc.Domain\NetCleanArchitectureMvc.Domain.csproj", "{DC45F02D-EBEF-43A9-9EFD-8A830DCE924C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCleanArchitectureMvc.Domain", "NetCleanArchitectureMvc.Domain\NetCleanArchitectureMvc.Domain.csproj", "{DC45F02D-EBEF-43A9-9EFD-8A830DCE924C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCleanArchitectureMvc.Application", "NetCleanArchitectureMvc.Application\NetCleanArchitectureMvc.Application.csproj", "{C8776A2B-2935-4CBE-8AAD-CE2B4652BC68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCleanArchitectureMvc.Application", "NetCleanArchitectureMvc.Application\NetCleanArchitectureMvc.Application.csproj", "{C8776A2B-2935-4CBE-8AAD-CE2B4652BC68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCleanArchitectureMvc.Infra.Data", "NetCleanArchitectureMvc.Infra.Data\NetCleanArchitectureMvc.Infra.Data.csproj", "{F5445B0A-02A3-49EE-A188-243DDF98E278}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCleanArchitectureMvc.Infra.Data", "NetCleanArchitectureMvc.Infra.Data\NetCleanArchitectureMvc.Infra.Data.csproj", "{F5445B0A-02A3-49EE-A188-243DDF98E278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCleanArchitectureMvc.Infra.IoC", "NetCleanArchitectureMvc.Infra.IoC\NetCleanArchitectureMvc.Infra.IoC.csproj", "{75C57710-4ACB-443C-9798-BD98962540C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCleanArchitectureMvc.Infra.IoC", "NetCleanArchitectureMvc.Infra.IoC\NetCleanArchitectureMvc.Infra.IoC.csproj", "{75C57710-4ACB-443C-9798-BD98962540C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCleanArchitectureMvc.WebUI", "NetCleanArchitectureMvc.WebUI\NetCleanArchitectureMvc.WebUI.csproj", "{78D1A3E5-E299-4925-A105-11C41235C525}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCleanArchitectureMvc.WebUI", "NetCleanArchitectureMvc.WebUI\NetCleanArchitectureMvc.WebUI.csproj", "{78D1A3E5-E299-4925-A105-11C41235C525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCleanArchitectureMvc.Domain.Tests", "NetCleanArchitectureMvc.Domain.Tests\NetCleanArchitectureMvc.Domain.Tests.csproj", "{F9191309-3898-486B-91F9-6CBEEB88C27E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{78D1A3E5-E299-4925-A105-11C41235C525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78D1A3E5-E299-4925-A105-11C41235C525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78D1A3E5-E299-4925-A105-11C41235C525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9191309-3898-486B-91F9-6CBEEB88C27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9191309-3898-486B-91F9-6CBEEB88C27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9191309-3898-486B-91F9-6CBEEB88C27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9191309-3898-486B-91F9-6CBEEB88C27E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
