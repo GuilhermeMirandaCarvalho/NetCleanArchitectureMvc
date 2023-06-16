@@ -1,7 +1,12 @@
+using NetCleanArchitectureMvc.Infra.IoC;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Adicione a configuração de injeção de dependência
+builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
