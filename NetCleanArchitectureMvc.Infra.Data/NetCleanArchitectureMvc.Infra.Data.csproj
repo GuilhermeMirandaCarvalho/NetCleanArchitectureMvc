@@ -7,11 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Identity\**" />
+    <EmbeddedResource Remove="Identity\**" />
+    <None Remove="Identity\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\NetCleanArchitectureMvc.Domain\NetCleanArchitectureMvc.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Identity\" />
     <Folder Include="Migrations\" />
   </ItemGroup>
 
