@@ -36,8 +36,7 @@ namespace NetCleanArchitectureMvc.Domain.Entities
             DomainExceptionValidation.When(string.IsNullOrEmpty(description), "Preencha a Descrição");
             DomainExceptionValidation.When(description.Length < 5, "Preencha a descrição com mais de 5 caracteres");
             DomainExceptionValidation.When(price < 0, "Preço deve ser maior que zero");
-            DomainExceptionValidation.When(stock < 0, "Estoque deve ser maior que zero");
-            DomainExceptionValidation.When(image.Length > 250, "Nome imagem não pode ter mais que 250 caracteres");
+            DomainExceptionValidation.When(stock < 0, "Estoque deve ser maior que zero");            
             
             Name = name;
             Description= description;
