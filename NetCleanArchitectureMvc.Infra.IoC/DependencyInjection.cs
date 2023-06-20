@@ -1,6 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NetCleanArchitectureMvc.Application.Interfaces;
+using NetCleanArchitectureMvc.Application.Mappings;
+using NetCleanArchitectureMvc.Application.Services;
+using NetCleanArchitectureMvc.Domain.Entities;
 using NetCleanArchitectureMvc.Domain.Interfaces;
 using NetCleanArchitectureMvc.Infra.Data.Context;
 using NetCleanArchitectureMvc.Infra.Data.Repositories;
@@ -18,6 +22,11 @@ namespace NetCleanArchitectureMvc.Infra.IoC
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+
+            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
             return services;
         }
